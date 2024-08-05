@@ -1,0 +1,74 @@
+.h1{
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-size: 21px;
+}
+.dashbord{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.admin-hospital{
+    padding: 20px;
+    width: 90%;
+    height: auto;
+}
+.admin-hospital h5{
+    margin-bottom: 10px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+.requests{
+    display: flex;
+    gap: 6%;
+}
+.request{
+    height: 120px;
+    width: 200px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.253);
+    background-color: white;
+    border-radius: 8px;
+    position: relative;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.request h4{
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+.request h6{
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+.request .a{
+    color: #5ACF5E;
+}
+.request .p{
+    color: #EFD427; 
+}
+.request .r{
+    color: #FF0D0D;
+}
+.request .t{
+    color: #FE950D;
+}
+.request p{
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+}
+.request img{
+    position: absolute;
+    top: 5px;
+    width: 50px;
+    right: 5px;
+}

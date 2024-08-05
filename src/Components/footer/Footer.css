@@ -1,0 +1,283 @@
+footer {
+  height: 450px;
+  width: 100%;
+  background-image: linear-gradient(90deg, #FDF4F6, #b2a6ffd6);
+
+}
+.footer {
+  height: 350px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.footer .form,
+.links,
+.touch {
+  height: 300px;
+  width: 400px;
+}
+.form {
+  /* background-color: azure; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form img{
+    width: 200px;
+}
+.form p {
+  font-weight: 700;
+  font-size: 18px;
+  color: black;
+}
+.form button {
+    background-color: #3a6dc9;
+    width: 156px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+  }
+.links h5 {
+  color: black;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+}
+.link-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 31px;
+}
+a {
+  text-decoration: none;
+  color: rgb(19, 18, 18);
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+.touch {
+  /* background-color: azure; */
+}
+.touch h5 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  color: rgb(13, 12, 12);
+}
+
+.touch .address {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 5px;
+}
+
+.footer-icon {
+  display: flex;
+  height: 90px;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+.ficon {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.ficon a {
+  font-size: 32px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  flex-wrap: wrap;
+  color: #3a6dc9;
+}
+.term {
+  display: flex;
+  gap: 20px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  flex-wrap: wrap;
+
+}
+.term a{
+    color: rgb(23, 20, 20);
+}
+.copy span {
+  color: rgb(14, 13, 13);
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+.fp{
+    text-align: center;
+}
+hr{
+  color: #ffffff;
+}
+@media screen and (max-width: 480px) {
+  footer{
+    height: auto;
+  }
+  .footer {
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .footer-icon {
+    flex-direction: column;
+    height: auto;
+    gap: 5px;
+    
+  }
+  .footer .form,
+  .links,
+  .touch {
+    gap: 12px;
+    height: 200px;
+  }
+  .form p {
+    font-size: 10px;
+  }
+  .form button {
+    margin-left: 0;
+  }
+  .form,
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .links {
+    height: 120px;
+  }
+  .link-nav {
+    margin-top: 0;
+    gap: 10px;
+    flex-direction: row;
+  }
+
+  .link-nav a {
+    font-size: 10px;
+  }
+
+  .links h5,
+  .touch h5,
+  .form h5 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .touch .address {
+    margin-top: 4px;
+    gap: 11px;
+    padding: 5px;
+  }
+  .touch-img img {
+    width: 18px;
+  }
+  .touch-para p {
+    font-size: 10px;
+  }
+ .ficon{
+  gap: 12px;
+ }
+  .ficon a{
+    font-size: 15px;
+  }
+ 
+.term{
+  gap: 12px;
+}
+.term a{
+  font-size: 10px;
+}
+.copy span{
+  font-size: 10px;
+}
+}
+
+@media (min-width: 479px) and (max-width: 768px){
+  .footer {
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .footer-icon {
+    flex-direction: column;
+    height: auto;
+    gap: 5px;
+    
+  }
+  .footer .form,
+  .links,
+  .touch {
+    gap: 12px;
+    height: 200px;
+  }
+  .form p {
+    font-size: 10px;
+  }
+  .form button {
+    margin-left: 0;
+  }
+  .form,
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .links {
+    height: 100px;
+  }
+  .link-nav {
+    margin-top: 0;
+    gap: 10px;
+    flex-direction: row;
+  }
+
+  .link-nav a {
+    font-size: 10px;
+  }
+
+  .links h5,
+  .touch h5,
+  .form h5 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .touch .address {
+    margin-top: 4px;
+    gap: 11px;
+    padding: 5px;
+  }
+  .touch-img img {
+    width: 18px;
+  }
+  .touch-para p {
+    font-size: 10px;
+  }
+ .ficon{
+  gap: 12px;
+ }
+  .ficon a{
+    font-size: 15px;
+  }
+.term{
+  gap: 12px;
+}
+.term a{
+  font-size: 10px;
+}
+.copy span{
+  font-size: 10px;
+}
+}
