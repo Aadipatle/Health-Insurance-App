@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './EmployeeForm.css';
 import jivit2 from '../../Assets/admin/jivit-logo 2 (1).svg'
 
-const EmployeeForm = () => {
+const EmpForm = () => {
   const [formData, setFormData] = useState({
     fullname: '',
     middlename: '',
@@ -14,8 +14,11 @@ const EmployeeForm = () => {
     aadharPanNo: '',
     departmentName: '',
     departmentLocation: '',
-    designation: ''
+    designation: '',
+    status:'pending'
   });
+
+  let url = 'http://localhost:3001/addcustomer'
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -25,20 +28,36 @@ const EmployeeForm = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+ const handleSubmit = async (e) => {
     e.preventDefault();
-    // Process the form data
-    console.log('Form Data Submitted:', formData);
-  };
 
+    try {
+      const response = await fetch(url, {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+          throw new Error(`Error: ${response.statusText}`);
+      }
+
+      const result = await response.json();
+      console.log('Success:', result);
+  } catch (error) {
+      console.error('Error:', error);
+  }
+  };
+  // <div className="main-heading">
+  // <img src={jivit2} alt="" />
+  // <h2> <span>Jivit Healthcare </span>& Medical Services pvt.ltd</h2>
+  // </div>
   return (
     <>
-    <div className="main-heading">
-    <img src={jivit2} alt="" />
-    <h2> <span>Jivit Healthcare </span>& Medical Services pvt.ltd</h2>
-    </div>
+      <h1 className='ahospital'>APPLICATION FORM</h1>
       <div className="form">
-      <h1>APPLICATION FORM</h1>
         <form onSubmit={handleSubmit} className="employee-form">
           <div className="form-group">
             <label>Full Name:</label>
@@ -84,11 +103,11 @@ const EmployeeForm = () => {
             <label>Designation:</label>
             <input type="text" name="designation" value={formData.designation} onChange={handleChange} />
           </div>
-          <button type="submit">Submit</button>
+          <input className='formbutton' type="submit" value='Submit'/>
         </form>
       </div>
     </>
   );
 };
 
-export default EmployeeForm;
+export default EmpForm;

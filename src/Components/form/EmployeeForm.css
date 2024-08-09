@@ -2,7 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: auto;
+  
 }
 .form h1{
   font-family: "Lato", sans-serif;
@@ -10,7 +11,7 @@
 }
 .main-heading{
   display: flex;
-  height: 80px;
+  height: 60px;
   justify-content: center;
   align-items: center;
 }
@@ -34,7 +35,8 @@
     gap: 20px;
     width: 70%;
     padding: 12px;
-    border: 1px solid gray;
+    border: none;
+    background-color: white;
   }
   
   .form-group {
@@ -56,24 +58,25 @@
     border-radius: 4px;
   }
   
-  button {
+  .formbutton{
     grid-column: span 2;
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #136FEC;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     margin-top: 20px;
+    width: 100%;
+    
   }
   
-  button:hover {
-    background-color: #45a049;
-  }
+
   
-  @media (max-width: 768px) {
+  @media (max-width: 480px) {
     .employee-form {
       grid-template-columns: 1fr;
+      width: auto;
     }
   
     button {

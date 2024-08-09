@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Admin.css'
 import logo from '../../Assets/jivit-logo.svg'
 import { Link, Outlet } from 'react-router-dom'
@@ -6,6 +6,7 @@ import { FaHeart, FaHospital, FaUser } from 'react-icons/fa'
 
 
 function Admin() {
+    const [icon,setIcon]=useState(false)
     return ( 
         <>
              <header className='admin-header'>
@@ -18,18 +19,22 @@ function Admin() {
              </header>
             <hr />
             <aside>
-                <div className="sidebar">
+            <div className="hidden" onClick={()=>{
+                setIcon(!icon)
+               }}>⛔</div>
+                <div className='sidebar'> 
                     <div className="items">
                         <div className="dash">
                            <Link to='/admin'><button>Dashboard</button></Link> 
-                        </div>
+                           
+                         </div>
                         <hr />
                         <div className="hospital">
                             <h5><FaHospital /> Hospital</h5>
-                            <Link to='hospital'>Add Hospital</Link>
+                            <Link to='hospitalform'>Add Hospital</Link>
                             <Link to='hospital'>Hospital List</Link>
                             <Link to='hospital'>Hospital Claim</Link>
-                            <Link to='hospital'>Hospital Payments</Link>
+                            <Link to='hospitalpay'>Hospital Payments</Link>
                         </div>
                         <hr />
                         <div className="health">
@@ -39,12 +44,42 @@ function Admin() {
                         <hr />
                         <div className="admin-customers">
                             <h5><FaUser /> Customers</h5>
-                            <Link to='hospital'>Add Benificiary</Link>
-                            <Link to='hospital'>Customers List</Link>
-                            
+                            <Link to='empform'>Add Benificiary</Link>
+                            <Link to='empform'>Add Family Members</Link>
+                            <Link to='emplist'>Customers List</Link>
                         </div>
                     </div>
                 </div>
+                {
+                    icon &&   
+                    <div className="items1">
+                        <div className="dash">
+                           <Link to='/admin'><button>Dashboard</button></Link> 
+                           
+                         </div>
+                        <hr />
+                        <div className="hospital">
+                            <h5><FaHospital /> Hospital</h5>
+                            <Link to='hospitalform'>Add Hospital</Link>
+                            <Link to='hospital'>Hospital List</Link>
+                            <Link to='hospital'>Hospital Claim</Link>
+                            <Link to='hospitalpay'>Hospital Payments</Link>
+                        </div>
+                        <hr />
+                        <div className="health">
+                            <h5><FaHeart /> Health Checkup</h5>
+                            <Link to='hospital'>Health List</Link>
+                        </div>
+                        <hr />
+                        <div className="admin-customers">
+                            <h5><FaUser /> Customers</h5>
+                            <Link to='empform'>Add Benificiary</Link>
+                            <Link to='empform'>Add Family Members</Link>
+                            <Link to='hospital'>Customers List</Link>
+                        </div>
+                    </div>
+              
+                }
                 <section>
                     <Outlet />
                 </section>

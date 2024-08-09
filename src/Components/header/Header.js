@@ -12,7 +12,7 @@ function Header() {
     return (
         <>
             <nav className="navbar">
-                <div className="container">
+                <div className="hcontainer">
                     <div className="logo">
                         <NavLink to="/"><img src={logo} alt="" /> </NavLink>
                     </div>
@@ -36,6 +36,9 @@ function Header() {
                             </li>
                             <li>
                                 <NavLink className='NavLink' to="" onClick={() => setShowNavbar(!showNavbar)}>Contact</NavLink>
+                            </li>
+                            <li>
+                                <NavLink className='NavLink' to="" onClick={() => setShowNavbar(!showNavbar)}>Hospital List</NavLink>
                             </li>
                         </ul>
                     </div>

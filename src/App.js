@@ -5,19 +5,26 @@ import Home from './Pages/home/Home';
 import Footer from './Components/footer/Footer';
 import Admin from './Pages/admin/Admin';
 import Dashboard from './Components/dashboard/Dashboard';
-import EmployeeForm from './Components/form/EmployeeForm';
+import EmpForm from './Components/form/EmpForm';
+import HospitalComponent from './Components/hospitalform/HospitalForm';
+import HospitalPay from './Components/hospitalpayment/HospitalPay';
+import EmpList from './Components/emplist/EmpList';
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Routes>
+        <Routes> 
           <Route element={<Home />} path='/' />
           <Route element={<Admin />} path='/admin/' >
-            <Route element={<Dashboard/>} path='' />
+            <Route element={<Dashboard />} path='' />
             <Route element={<h1>Welcome </h1>} path='hospital' />
+            <Route element={<EmpForm />} path='empform' />
+            <Route element={<HospitalPay />} path='hospitalpay' />
+            <Route element={<EmpList/>} path='emplist' />
+            <Route element={<HospitalComponent />} path='hospitalform' />
           </Route>
-          <Route element={<EmployeeForm/>}path='/empform' />
+         
         </Routes>
       </BrowserRouter>
     </>

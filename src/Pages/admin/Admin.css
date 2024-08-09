@@ -1,59 +1,141 @@
-.admin-header{
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px;
+.admin-header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
 }
-.header-icon img{
-    width: 180px;
+.header-icon img {
+  width: 180px;
 }
-.sidebar{
-    height: 100vh;
-    width: 300px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1px;
-    font-family: "Lato", sans-serif;
+.sidebar {
+  height: 100vh;
+  width: 300px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  font-family: "Lato", sans-serif;
 
-    /* justify-content: center; */
+  /* justify-content: center; */
 }
-aside{
+aside {
+  display: flex;
+}
+section {
+  background: #dde5e7;
+  width: 100%;
+  /* display: flex;
+  justify-content: center; */
+}
+.sidebar button {
+  background-color: #dde5e7;
+  color: black;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  border: none;
+  width: 120px;
+  border-radius: 4px;
+  padding: 5px;
+  cursor: pointer;
+}
+.items {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.items1 {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  display: none;
+}
+
+.hospital,
+.health,
+.admin-customers {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.hospital,
+.health,
+.admin-customers h5 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+.hidden {
+  position: absolute;
+  top: 65px;
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  /* section {
     display: flex;
-}
-section{
-    background: #DDE5E7;
-    width: 100%;
-}
-.sidebar button{
-    background-color: #DDE5E7;
-    color: black;
-    font-family: "Lato", sans-serif;
-    font-weight: 700;
-    font-size: 18px; 
-    border: none;
-    width: 120px;
-    border-radius: 4px;
-    padding: 5px;
-    cursor: pointer;
-}
-.items{
-    height: 600px;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    gap: 20px;
-}
-
-.hospital ,.health  ,.admin-customers{
+    flex-direction: column;
+  } */
+  .header-icon img{
+    width: 100px;
+  }
+  .admin-logo h5{
+    font-size: 12px;
+  }
+  .sidebar {
+    display: none;
+  }
+  .hidden {
+    display: block;
+  }
+  a {
+    font-size: 14px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+  }
+  .hospital,
+  .health,
+  .admin-customers h5 {
+    font-size: 14px;
+  }
+  .dash{
+    height: 35px;
+    align-items: center;
     display: flex;
-    flex-direction:column ;
-    gap: 5px;
-}
-.hospital ,.health  ,.admin-customers h5{
+  }
+  .dash button {
+    font-size: 14px;
+    background-color: #dde5e7;
+    color: black;
+    border: none;
+    padding: 5px;
+    width: 100px;
     font-family: "Lato", sans-serif;
     font-weight: 700;
-    font-size: 18px;
+  }
+
+  .items1 {
+    margin-top: 35px;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    background-color: #fafbfbe7;
+    width: 100%;
+    height: 290px;
+    animation: slide .6s linear;
+  }
+  @keyframes slide {
+    0%{
+        transform: scale(0); 
+    }
+    100%{
+       transform: scale(1);
+    }
+  }
 }
