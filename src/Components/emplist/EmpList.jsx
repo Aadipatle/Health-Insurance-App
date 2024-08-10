@@ -6,13 +6,14 @@ function App() {
     useEffect(() => {
         async function getData() {
             try {
-                let url = 'http://localhost:3001/allcustomers';
+                let url = 'http://localhost:8080/allcustomers';
                 let response = await fetch(url);
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
                 let emp = await response.json();
                 setData(emp);
+                console.log(emp)
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
@@ -26,7 +27,7 @@ console.log(data)
 
     const updateStatus = async (id, status) => {
         try {
-            let url = `http://localhost:3001/customer/${id}/status`;
+            let url = `http://localhost:8080/customer/${id}/status`;
             let response = await fetch(url, {
                 method: 'PATCH',
                 headers: {

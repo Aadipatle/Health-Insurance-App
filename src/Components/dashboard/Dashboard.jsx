@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Dashboard.css'
 import authorize from '../../Assets/admin/authorize.svg'
 import pending from '../../Assets/admin/pending.svg'
-import reject from '../../Assets/admin/reject.svg'
+import Reject from '../../Assets/admin/reject.svg'
 import total from '../../Assets/admin/total.svg'
 function Dashboard() {
   const [data, setData] = useState([]);
@@ -12,7 +12,7 @@ function Dashboard() {
   useEffect(() => {
     async function getData() {
       try {
-        let url = 'http://localhost:3001/allcustomers';
+        let url = 'http://localhost:8080/allcustomers';
         let response = await fetch(url);
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -59,7 +59,7 @@ function Dashboard() {
               <h4>Reject</h4>
               <h6 className='r'>{reject.length}</h6>
               <p>"The claim was rejected."</p>
-              <img src={reject} alt="" />
+              <img src={Reject} alt="" />
             </div>
             <div className="request">
               <h4>Total</h4>
@@ -89,7 +89,7 @@ function Dashboard() {
               <h4>Reject</h4>
               <h6 className='r'>1</h6>
               <p>"The claim was rejected."</p>
-              <img src={reject} alt="" />
+              <img src={Reject} alt="" />
             </div>
             <div className="request">
               <h4>Total</h4>
@@ -119,7 +119,7 @@ function Dashboard() {
               <h4>Reject</h4>
               <h6 className='r'>1</h6>
               <p>"The claim was rejected."</p>
-              <img src={reject} alt="" />
+              <img src={Reject} alt="" />
             </div>
             <div className="request">
               <h4>Total</h4>

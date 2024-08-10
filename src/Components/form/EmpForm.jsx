@@ -18,7 +18,7 @@ const EmpForm = () => {
     status:'pending'
   });
 
-  let url = 'http://localhost:3001/addcustomer'
+  let url = 'http://localhost:8080/addcustomer'
 
   const handleChange = (e) => {
     const { name, value } = e.target;

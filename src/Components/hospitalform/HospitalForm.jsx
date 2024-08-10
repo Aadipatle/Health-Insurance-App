@@ -22,7 +22,7 @@ const HospitalComponent = () => {
     remark: ''
   });
 
-  let url = 'http://localhost:3001/allcustomers'
+  let url = 'http://localhost:8080/allcustomers'
 
   const handleChange = (e) => {
     const { name, value } = e.target;
