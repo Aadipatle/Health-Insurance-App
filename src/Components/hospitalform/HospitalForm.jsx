@@ -66,6 +66,7 @@ const HospitalComponent = () => {
               type="text"
               id="hospitalName"
               name="hospitalName"
+              placeholder='Enter Hospital Name'
               value={hospitalData.hospitalName}
               onChange={handleChange}
               required
@@ -76,6 +77,7 @@ const HospitalComponent = () => {
             <input
               type="text"
               id="doctorName"
+              placeholder='Enter Doctor Name'
               name="doctorName"
               value={hospitalData.doctorName}
               onChange={handleChange}
@@ -88,6 +90,7 @@ const HospitalComponent = () => {
               type="text"
               id="speciality"
               name="speciality"
+              placeholder='Enter Speciality'
               value={hospitalData.speciality}
               onChange={handleChange}
               required
@@ -98,6 +101,7 @@ const HospitalComponent = () => {
             <input
               type="text"
               id="mobileNo"
+              placeholder='Enter Mobile Number'
               name="mobileNo"
               value={hospitalData.mobileNo}
               onChange={handleChange}
@@ -109,6 +113,7 @@ const HospitalComponent = () => {
             <input
               type="text"
               id="address"
+              placeholder='Enter Hospital Address'
               name="address"
               value={hospitalData.address}
               onChange={handleChange}
@@ -120,6 +125,7 @@ const HospitalComponent = () => {
             <input
               type="text"
               id="pincode"
+              placeholder='Enter Pin Code'
               name="pincode"
               value={hospitalData.pincode}
               onChange={handleChange}
@@ -131,6 +137,7 @@ const HospitalComponent = () => {
             <input
               type="text"
               id="district"
+              placeholder='Enter District'
               name="district"
               value={hospitalData.district}
               onChange={handleChange}
@@ -142,6 +149,7 @@ const HospitalComponent = () => {
             <input
               type="text"
               id="tehsil"
+              placeholder='Enter Tehsil'
               name="tehsil"
               value={hospitalData.tehsil}
               onChange={handleChange}
@@ -153,6 +161,7 @@ const HospitalComponent = () => {
             <input
               type="text"
               id="country"
+              placeholder='Enter Country'
               name="country"
               value={hospitalData.country}
               onChange={handleChange}
@@ -164,6 +173,7 @@ const HospitalComponent = () => {
             <input
               type="text"
               id="phoneNo"
+              placeholder='Enter Phone Number'
               name="phoneNo"
               value={hospitalData.phoneNo}
               onChange={handleChange}
@@ -175,6 +185,7 @@ const HospitalComponent = () => {
             <input
               type="email"
               id="emailId"
+              placeholder='Enter Email'
               name="emailId"
               value={hospitalData.emailId}
               onChange={handleChange}
@@ -186,6 +197,7 @@ const HospitalComponent = () => {
             <input
               type="text"
               id="accountName"
+              placeholder='Enter Account Name'
               name="accountName"
               value={hospitalData.accountName}
               onChange={handleChange}
@@ -197,6 +209,7 @@ const HospitalComponent = () => {
             <input
               type="text"
               id="accountNo"
+              placeholder='Enter Account Number'
               name="accountNo"
               value={hospitalData.accountNo}
               onChange={handleChange}
@@ -208,6 +221,7 @@ const HospitalComponent = () => {
             <input
               type="text"
               id="bankName"
+              placeholder='Enter Bank Name'
               name="bankName"
               value={hospitalData.bankName}
               onChange={handleChange}
@@ -219,6 +233,7 @@ const HospitalComponent = () => {
             <input
               type="text"
               id="ifscCode"
+              placeholder='Enter IFSC Code'
               name="ifscCode"
               value={hospitalData.ifscCode}
               onChange={handleChange}
@@ -230,6 +245,7 @@ const HospitalComponent = () => {
             <input
               type="text"
               id="branch"
+              placeholder='Enter Branch Name'
               name="branch"
               value={hospitalData.branch}
               onChange={handleChange}
@@ -241,6 +257,7 @@ const HospitalComponent = () => {
             <textarea
               id="remark"
               name="remark"
+              placeholder='Enter Remark'
               value={hospitalData.remark}
               onChange={handleChange}
               required

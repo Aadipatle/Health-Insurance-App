@@ -33,7 +33,12 @@
     border: 1px solid #ccc;
     border-radius: 5px;
   }
-  
+  .form-group input::placeholder {
+    color:  #7f7f7f;
+    opacity: .8; 
+    font-family: "Lato", sans-serif;
+
+  }
   .formbutton {
     padding: 10px 20px;
     border: none;
