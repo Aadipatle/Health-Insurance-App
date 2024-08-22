@@ -36,7 +36,6 @@ function Dashboard() {
   }, [data])
   return (
     <>
-
       <div className="dashbord">
         <h1 className='h1'>Dashboard</h1>
         <div className="admin-hospital">

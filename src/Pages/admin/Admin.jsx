@@ -6,32 +6,32 @@ import { FaHeart, FaHospital, FaUser } from 'react-icons/fa'
 
 
 function Admin() {
-    const [icon,setIcon]=useState(false)
-    return ( 
-        <>
-             <header className='admin-header'>
-                <div className="header-icon">
+    const [icon, setIcon] = useState(false)
+    return (
+    <>
+        <header className='admin-header'>
+             <div className="header-icon">
                     <img src={logo} alt="" />
                 </div>
                 <div className="admin-logo">
-                <h5><FaUser/> Admin@gmail.com</h5>
+                    <h5><FaUser /> Admin@gmail.com</h5>
                 </div>
-             </header>
+            </header>
             <hr />
             <aside>
-            <div className="hidden" onClick={()=>{
-                setIcon(!icon)
-               }}>⛔</div>
-                <div className='sidebar'> 
+                <div className="hidden" onClick={() => {
+                    setIcon(!icon)
+                }}>⛔</div>
+                <div className='sidebar'>
                     <div className="items">
                         <div className="dash">
-                           <Link to='/admin'><button>Dashboard</button></Link> 
-                           
-                         </div>
+                            <Link to='/admin'><button>Dashboard</button></Link>
+
+                        </div>
                         <hr />
                         <div className="hospital">
                             <h5><FaHospital /> Hospital</h5>
-                            <Link to='hospitalform'>Add Hospital</Link>
+                            <Link to='hospitalform' >Add Hospital</Link>
                             <Link to='hospital'>Hospital List</Link>
                             <Link to='hospital'>Hospital Claim</Link>
                             <Link to='hospitalpay'>Hospital Payments</Link>
@@ -51,34 +51,49 @@ function Admin() {
                     </div>
                 </div>
                 {
-                    icon &&   
+                    icon &&
                     <div className="items1">
                         <div className="dash">
-                           <Link to='/admin'><button>Dashboard</button></Link> 
-                           
-                         </div>
+                            <Link to='/admin'><button>Dashboard</button></Link>
+
+                        </div>
                         <hr />
                         <div className="hospital">
                             <h5><FaHospital /> Hospital</h5>
-                            <Link to='hospitalform'>Add Hospital</Link>
-                            <Link to='hospital'>Hospital List</Link>
-                            <Link to='hospital'>Hospital Claim</Link>
-                            <Link to='hospitalpay'>Hospital Payments</Link>
+                            <Link to='hospitalform' onClick={() => {
+                                setIcon(!icon)
+                            }}>Add Hospital</Link>
+                            <Link to='hospital' onClick={() => {
+                                setIcon(!icon)
+                            }}>Hospital List</Link>
+                            <Link to='hospital' onClick={() => {
+                                setIcon(!icon)
+                            }}>Hospital Claim</Link>
+                            <Link to='hospitalpay' onClick={() => {
+                                setIcon(!icon)
+                            }}>Hospital Payments</Link>
                         </div>
                         <hr />
                         <div className="health">
                             <h5><FaHeart /> Health Checkup</h5>
-                            <Link to='hospital'>Health List</Link>
+                            <Link to='hospital' onClick={() => {
+                                setIcon(!icon)
+                            }}>Health List</Link>
                         </div>
                         <hr />
                         <div className="admin-customers">
                             <h5><FaUser /> Customers</h5>
-                            <Link to='empform'>Add Benificiary</Link>
-                            <Link to='empform'>Add Family Members</Link>
-                            <Link to='hospital'>Customers List</Link>
+                            <Link to='empform' onClick={() => {
+                                setIcon(!icon)
+                            }}>Add Benificiary</Link>
+                            <Link to='empform' onClick={() => {
+                                setIcon(!icon)
+                            }}>Add Family Members</Link>
+                            <Link to='hospital' onClick={() => {
+                                setIcon(!icon)
+                            }}>Customers List</Link>
                         </div>
                     </div>
-              
                 }
                 <section>
                     <Outlet />

@@ -432,3 +432,43 @@ p {
   width: 50px;
   }
 }
+
+@media screen and (min-width: 480px) and (max-width:768px) {
+  .main-wrapper {
+  background-position: center;
+  }
+  .missions {
+    justify-content: center;
+    gap: 25px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  .mission{
+    width: 170px;
+    height: 150px;
+  }
+  .mission img{
+    width: 30px;
+  }
+  .mission h6 ,.customer-info h6{
+    font-size: 10px;
+  }
+  .mission p{
+    font-size: 10px;
+  }
+  .insrance-content h3 {
+    font-size: 21px;
+  }
+  .insurance-img img {
+    width: 220px;
+  }
+  .benifit-boxes {
+    /* flex-direction: column; */
+    height: auto;
+    gap: 18px;
+  }
+  .customer{
+    height: 151px;
+    width: 60%;
+  }
+}

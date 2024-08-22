@@ -15,7 +15,7 @@ const EmpForm = () => {
     departmentName: '',
     departmentLocation: '',
     designation: '',
-    status:'pending'
+    status: 'pending'
   });
 
   let url = 'http://localhost:8080/addcustomer'
@@ -28,27 +28,27 @@ const EmpForm = () => {
     });
   };
 
- const handleSubmit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
       const response = await fetch(url, {
-          method: 'POST',
-          headers: {
-              'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(formData),
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
 
       if (!response.ok) {
-          throw new Error(`Error: ${response.statusText}`);
+        throw new Error(`Error: ${response.statusText}`);
       }
 
       const result = await response.json();
       console.log('Success:', result);
-  } catch (error) {
+    } catch (error) {
       console.error('Error:', error);
-  }
+    }
   };
   // <div className="main-heading">
   // <img src={jivit2} alt="" />
@@ -103,7 +103,7 @@ const EmpForm = () => {
             <label>Designation:</label>
             <input type="text" name="designation" value={formData.designation} onChange={handleChange} />
           </div>
-          <input className='formbutton' type="submit" value='Submit'/>
+          <input className='formbutton' type="submit" value='Submit' />
         </form>
       </div>
     </>

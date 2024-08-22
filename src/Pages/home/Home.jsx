@@ -1,34 +1,34 @@
-import React, { useEffect } from 'react'
-import './Home.css'
-import benifit from '../../Assets/Benefit.svg'
-import discharg from '../../Assets/discharge.svg'
-import vector from '../../Assets/Vector.svg'
-import company from '../../Assets/Company.svg'
-import people from '../../Assets/pp 1.svg'
-import cash from '../../Assets/cashless.svg'
-import work from '../../Assets/workingman.svg'
-import happy from '../../Assets/happy.svg'
-import together from '../../Assets/together.svg'
-import stay from '../../Assets/stayman.svg'
-import service1 from '../../Assets/service1.svg'
-import service2 from '../../Assets/service2.svg'
-import service3 from '../../Assets/service3.svg'
-import service4 from '../../Assets/service4.svg'
-import insurance from '../../Assets/insurance.svg'
-import mission1 from '../../Assets/mission1.svg'
-import mission2 from '../../Assets/mission2.svg'
-import mission3 from '../../Assets/mission3.svg'
-import customer from '../../Assets/customer.svg'
-import Header from '../../Components/header/Header'
+import React, { useEffect } from 'react';
+import './Home.css';
+import benifit from '../../Assets/Benefit.svg';
+import discharg from '../../Assets/discharge.svg';
+import vector from '../../Assets/Vector.svg';
+import company from '../../Assets/Company.svg';
+import people from '../../Assets/pp 1.svg';
+import cash from '../../Assets/cashless.svg';
+import work from '../../Assets/workingman.svg';
+import happy from '../../Assets/happy.svg';
+import together from '../../Assets/together.svg';
+import stay from '../../Assets/stayman.svg';
+import service1 from '../../Assets/service1.svg';
+import service2 from '../../Assets/service2.svg';
+import service3 from '../../Assets/service3.svg';
+import service4 from '../../Assets/service4.svg';
+import insurance from '../../Assets/insurance.svg';
+import mission1 from '../../Assets/mission1.svg';
+import mission2 from '../../Assets/mission2.svg';
+import mission3 from '../../Assets/mission3.svg';
+import customer from '../../Assets/customer.svg';
+import Header from '../../Components/header/Header';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import "./Home.css"
+import "./Home.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Footer from '../../Components/footer/Footer'
+import Footer from '../../Components/footer/Footer';
 function Home() {
 
     useEffect(() => {
@@ -102,7 +102,7 @@ function Home() {
                     <span>POLICIES SOLD</span>
                 </div>
             </div>
-            <div className="services">
+            <div className="services" id='service'>
                 <h2>Our Services</h2>
                 <div className="service" data-aos='fade-right' data-aos-duration='1000'>
                     <img src={service1} alt="" />
