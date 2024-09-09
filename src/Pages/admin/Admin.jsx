@@ -8,9 +8,9 @@ import { FaHeart, FaHospital, FaUser } from 'react-icons/fa'
 function Admin() {
     const [icon, setIcon] = useState(false)
     return (
-    <>
-        <header className='admin-header'>
-             <div className="header-icon">
+        <>
+            <header className='admin-header'>
+                <div className="header-icon">
                     <img src={logo} alt="" />
                 </div>
                 <div className="admin-logo">

@@ -183,7 +183,7 @@ p {
   font-family: "Lato", sans-serif;
   font-weight: 500;
 }
-.insrance-content h3 span { 
+.insrance-content h3 span {
   color: #49b805;
 }
 .insurance-img img {
@@ -288,16 +288,18 @@ p {
   width: 100%;
 }
 
-.cc{
+.cc {
   display: flex;
   justify-content: center;
 }
 
 @media screen and (max-width: 480px) {
-  .services h2,.about h2,.feedback h2{
+  .services h2,
+  .about h2,
+  .feedback h2 {
     font-size: 18px;
   }
-  p{
+  p {
     font-size: 12px;
   }
   .main-wrapper {
@@ -342,17 +344,17 @@ p {
     height: auto;
     gap: 18px;
   }
-  .box{
+  .box {
     width: 120px;
     height: 120px;
   }
-  .box p{
+  .box p {
     font-size: 10px;
     font-weight: 400;
   }
-.works{
-  height: 90px;
-}
+  .works {
+    height: 90px;
+  }
   .work {
     height: 90px;
   }
@@ -369,13 +371,13 @@ p {
   .service {
     width: 90%;
   }
-  .service img{
+  .service img {
     width: 50px;
   }
-  .service-content h5{
+  .service-content h5 {
     font-size: 11px;
   }
-  .service-content p{
+  .service-content p {
     font-size: 10px;
     font-weight: 400;
   }
@@ -390,7 +392,9 @@ p {
     gap: 10px;
     padding: 5px;
   }
-  .about p,.customer-info p ,.benifit-btn span{
+  .about p,
+  .customer-info p,
+  .benifit-btn span {
     font-size: 10px;
     font-weight: 400;
   }
@@ -400,17 +404,18 @@ p {
     margin-top: 10px;
     flex-wrap: wrap;
   }
-  .mission{
+  .mission {
     width: 170px;
     height: 150px;
   }
-  .mission img{
+  .mission img {
     width: 30px;
   }
-  .mission h6 ,.customer-info h6{
+  .mission h6,
+  .customer-info h6 {
     font-size: 10px;
   }
-  .mission p{
+  .mission p {
     font-size: 10px;
   }
   .insrance-content h3 {
@@ -428,14 +433,14 @@ p {
     height: 120px;
     gap: 5px;
   }
-  .customer-img img{
-  width: 50px;
+  .customer-img img {
+    width: 50px;
   }
 }
 
-@media screen and (min-width: 480px) and (max-width:768px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .main-wrapper {
-  background-position: center;
+    background-position: center;
   }
   .missions {
     justify-content: center;
@@ -443,17 +448,18 @@ p {
     margin-top: 10px;
     flex-wrap: wrap;
   }
-  .mission{
+  .mission {
     width: 170px;
     height: 150px;
   }
-  .mission img{
+  .mission img {
     width: 30px;
   }
-  .mission h6 ,.customer-info h6{
+  .mission h6,
+  .customer-info h6 {
     font-size: 10px;
   }
-  .mission p{
+  .mission p {
     font-size: 10px;
   }
   .insrance-content h3 {
@@ -467,7 +473,7 @@ p {
     height: auto;
     gap: 18px;
   }
-  .customer{
+  .customer {
     height: 151px;
     width: 60%;
   }
