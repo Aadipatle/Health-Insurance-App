@@ -9,6 +9,7 @@ import HospitalComponent from './Components/hospitalform/HospitalForm';
 import HospitalPay from './Components/hospitalpayment/HospitalPay';
 import EmpList from './Components/emplist/EmpList';
 import ScrollToTop from './Scroll';
+import HospitalHome from './Pages/hospitalPanel/HospitalHome';
  
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
             <Route element={<EmpList />} path='emplist' />
             <Route element={<HospitalComponent />} path='hospitalform' />
           </Route>
+          <Route element={<HospitalHome />} path='hospitalhome' />
+
         </Routes>
       </BrowserRouter>
     </>

@@ -16,6 +16,9 @@
   padding: 20px;
   width: 90%;
   height: auto;
+  display: flex;
+  flex-direction: column;
+ 
 }
 .admin-hospital h5 {
   margin-bottom: 10px;
@@ -42,7 +45,7 @@
 .request h4 {
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size: .8em;
 }
 .request h6 {
   font-family: "Lato", sans-serif;
@@ -77,6 +80,8 @@
     .admin-hospital{
         padding: 10px;
         width: 100%;
+        align-items: center;
+        justify-content: center;
         margin-left: 25px;
     }
   .requests {
@@ -92,7 +97,7 @@
     width: 30px;
   }
   .request h4{
-    font-size: 12px;
+    /* font-size: 12px; */
   }
   .request h6{
     font-size: 12px;

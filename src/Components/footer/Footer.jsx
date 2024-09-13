@@ -29,9 +29,8 @@ function Footer() {
                         <h5>Quick Links</h5>
                         <div className="link-nav">
                             <NavLink to={"/"}>Home</NavLink>
-                            <NavLink to={"/"}>Gallary</NavLink>
-                            <NavLink to={"/"}>Courses</NavLink>
                             <NavLink to={"/"}>About Us</NavLink>
+                            <NavLink to={"/"}>Services</NavLink>
                             <NavLink to={"/"}>Contact Us</NavLink>
                         </div>
                     </div>
