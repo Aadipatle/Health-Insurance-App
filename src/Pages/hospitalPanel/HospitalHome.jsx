@@ -1,5 +1,6 @@
 import React from 'react'
 import './Home.css'
+import { Link } from 'react-router-dom'
 
 function HospitalHome() {
     return (
@@ -7,16 +8,24 @@ function HospitalHome() {
 
             <header className='hospitalnav'>
                 <nav className='hnav'>
-                    <li>Home</li>
-                    <li>List</li>
-                    <li>Contact</li>
+                    <Link>Home</Link>
+                    <Link>List</Link>
+                    <Link>Contact</Link>
                 </nav>
                 <div className="hicon">
                     <strong>abchospital@gmail.com</strong>
                 </div>
             </header>
             <div className="hpage">
-                <h1>Welcome in Doctor Panel</h1>
+                <div className="headingwrapper">
+                    <div className="health">
+                        <h1>Top Class <span>Health</span></h1>
+                        <h1><span>Care</span> Hospital </h1>
+                    </div>
+                   <div className="banner">
+                   <h1>insert image</h1>
+                   </div>
+                </div>
             </div>
         </>
     )

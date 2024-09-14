@@ -24,3 +24,22 @@ nav li{
     height: 100vh;
     background-color: rgba(212, 212, 255, 0.661);
 }
+.headingwrapper{
+display: flex;
+height: 300px;
+align-items: center;
+padding:10px;
+justify-content: space-evenly;
+}
+.health{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+}
+.banner{
+    height: 50px;
+    border: 2px solid blue;
+}
+.health h1 span{
+    color: rgb(34, 34, 253);
+}
