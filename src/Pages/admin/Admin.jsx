@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './Admin.css'
 import logo from '../../Assets/jivit-logo.svg'
 import { Link, Outlet } from 'react-router-dom'
-import { FaHeart, FaHospital, FaUser } from 'react-icons/fa'
+import { FaHeart, FaHospital, FaUser,FaBars,FaCross, FaCut } from 'react-icons/fa'
 
 
 function Admin() {
@@ -21,7 +21,7 @@ function Admin() {
             <aside>
                 <div className="hidden" onClick={() => {
                     setIcon(!icon)
-                }}>⛔</div>
+                }}>{icon ? <FaCut/> : <FaBars/> } </div>
                 <div className='sidebar'>
                     <div className="items">
                         <div className="dash">
