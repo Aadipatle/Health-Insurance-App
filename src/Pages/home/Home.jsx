@@ -29,6 +29,7 @@ import "./Home.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Footer from '../../Components/footer/Footer';
+import ScrollToTop from '../../Scroll';
 function Home() {
 
     useEffect(() => {
@@ -38,7 +39,8 @@ function Home() {
     }, [])
     return (
         <>
-            <div className="main-wrapper">
+        <ScrollToTop />
+            <div className="main-wrapper" id='top'>
                 <Header />
                 <div className="main-content">
                     <h1 data-aos='fade-down' data-aos-duration='1200'>Health Insurance Plan</h1>
@@ -143,7 +145,7 @@ function Home() {
                     <img src={insurance} alt="" />
                 </div>
             </div>
-            <div className="about">
+            <div className="about" id='about'>
                 <h2>About Us</h2>
                 <p>Jivit Healthcare & Medical Services pvt. Ltd provides government health plans, best health assistant, claim management & government health plans, health checkup plans. Jivit Healthcare & Medical Services pvt. Ltd. is a prominent & trustable Health care company which has a great experience in medical & healthcare services. Our team always delivers the best healthcare services to the customers...</p>
                 <div className="missions">
@@ -164,7 +166,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <div className="feedback">
+            <div className="feedback" id='feedback'>
                 <h2>Our Customers Says</h2>
                 <Swiper
                     effect={"coverflow"}

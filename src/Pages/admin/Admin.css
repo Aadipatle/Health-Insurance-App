@@ -8,6 +8,11 @@
 .header-icon img {
   width: 180px;
 }
+a {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+}
 .sidebar {
   height: 100vh;
   width: 300px;
@@ -25,8 +30,7 @@ aside {
 section {
   background: #dde5e7;
   width: 100%;
-  /* display: flex;
-  justify-content: center; */
+
 }
 .sidebar button {
   background-color: #dde5e7;
@@ -76,11 +80,7 @@ section {
   display: none;
 }
 @media screen and (max-width: 480px) {
-  /* section {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  } */
+
   .header-icon img{
     width: 100px;
   }

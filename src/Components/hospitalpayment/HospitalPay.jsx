@@ -25,13 +25,9 @@ const HospitalPay = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Process the form data
     console.log('Form Data Submitted:', hospitalPay);
   };
-  // <div className="main-heading">
-  // <img src={jivit2} alt="" />
-  // <h2> <span>Jivit Healthcare </span>& Medical Services pvt.ltd</h2>
-  // </div>
+
   return (
     <>
       <h1 className='ahospital'>Hospital Payments</h1>

@@ -4,11 +4,13 @@
   width: 100%;
   background-size: cover;
 }
+*{
+  scroll-behavior: smooth;
+}
 
 .main-content {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   width: 50%;
   margin-left: 160px;
   gap: 20px;
@@ -115,7 +117,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background: #000; */
   gap: 5px;
   height: 150px;
 }
@@ -212,7 +213,6 @@ p {
 .missions {
   display: flex;
   gap: 10%;
-  /* flex-wrap: wrap; */
 }
 .mission {
   width: 300px;
@@ -340,7 +340,6 @@ p {
     font-size: 14px;
   }
   .benifit-boxes {
-    /* flex-direction: column; */
     height: auto;
     gap: 18px;
   }
@@ -469,7 +468,6 @@ p {
     width: 220px;
   }
   .benifit-boxes {
-    /* flex-direction: column; */
     height: auto;
     gap: 18px;
   }

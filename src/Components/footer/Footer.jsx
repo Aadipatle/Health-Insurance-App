@@ -10,6 +10,7 @@ import linkdin from '../../Assets/Linkedin.svg'
 import logo from '../../Assets/jivit-logo.svg'
 
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa'
+import { HashLink } from 'react-router-hash-link'
 function Footer() {
     useEffect(() => {
 
@@ -18,20 +19,20 @@ function Footer() {
     let year = date.getFullYear()
     return (
         <>
-            <footer>
+            <footer id='footer'>
                 <div className="footer">
                     <div className="form">
                         <img src={logo} alt="" />
                         <p>Is there anything you’d like to discuss?</p>
-                       <button>Send Message</button>
+                      <Link to={`https://wa.me/+919665450999`}><button>Send Message</button></Link> 
                     </div>
                     <div className="links">
                         <h5>Quick Links</h5>
                         <div className="link-nav">
-                            <NavLink to={"/"}>Home</NavLink>
-                            <NavLink to={"/"}>About Us</NavLink>
-                            <NavLink to={"/"}>Services</NavLink>
-                            <NavLink to={"/"}>Contact Us</NavLink>
+                            <HashLink to={"/#top"}>Home</HashLink>
+                            <HashLink to={"/#about"}>About Us</HashLink>
+                            <HashLink to={"/#service"}>Services</HashLink>
+                            <NavLink to={"/#footer"}>Contact Us</NavLink>
                         </div>
                     </div>
                     <div className="touch">
@@ -67,10 +68,9 @@ function Footer() {
                 <hr />
                 <div className="footer-icon">
                     <div className="ficon">
-                        <Link to={'/'}><img src={facebook} alt='' /></Link>
-                        <Link to={'/'}><img src={watsaap} alt='' /></Link>
-                        <Link to={'/'}><img src={email} alt='' /></Link>
-                        <Link to={'/'}><img src={linkdin} alt='' /></Link>
+                        <Link to="https://www.facebook.com/share/"><img src={facebook} alt='' /></Link>
+                        <Link to={`https://wa.me/+919665450999`}><img src={watsaap} alt='' /></Link>
+                        <Link to={'mailto:info@jivithealthcare.com'}><img src={email} alt='' /></Link>
                        
                     </div>
                     <div className="term">

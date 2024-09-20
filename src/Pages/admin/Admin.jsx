@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './Admin.css'
 import logo from '../../Assets/jivit-logo.svg'
 import { Link, Outlet } from 'react-router-dom'
-import { FaHeart, FaHospital, FaUser,FaBars,FaCross, FaCut } from 'react-icons/fa'
+import { FaHeart, FaHospital, FaUser,FaBars,FaCut } from 'react-icons/fa'
 
 
 function Admin() {
@@ -45,7 +45,7 @@ function Admin() {
                         <div className="admin-customers">
                             <h5><FaUser /> Customers</h5>
                             <Link to='empform'>Add Benificiary</Link>
-                            <Link to='empform'>Add Family Members</Link>
+                            <Link to='familyform'>Add Family Members</Link>
                             <Link to='emplist'>Customers List</Link>
                         </div>
                     </div>
@@ -75,7 +75,7 @@ function Admin() {
                         </div>
                         <hr />
                         <div className="health">
-                            <h5><FaHeart /> Health Checkup</h5>
+                            <h5> <FaHeart /> Health Checkup</h5>
                             <Link to='hospital' onClick={() => {
                                 setIcon(!icon)
                             }}>Health List</Link>
@@ -86,7 +86,7 @@ function Admin() {
                             <Link to='empform' onClick={() => {
                                 setIcon(!icon)
                             }}>Add Benificiary</Link>
-                            <Link to='empform' onClick={() => {
+                            <Link to='familyform' onClick={() => {
                                 setIcon(!icon)
                             }}>Add Family Members</Link>
                             <Link to='hospital' onClick={() => {
