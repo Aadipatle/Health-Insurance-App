@@ -8,14 +8,22 @@ import HospitalPay from './Components/hospitalpayment/HospitalPay';
 import EmpList from './Components/emplist/EmpList';
 import HospitalHome from './Pages/hospitalPanel/HospitalHome';
 import FamilyMemberForm from './Components/famiymember/AddFamilyMember';
+import Login from './Components/adminLogin/Login';
+import PrivateRoute from './Components/adminLogin/Protected';
  
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
+        
+          <Route element={<Login />} path='/login' />
           <Route element={<Home />} path='/' />
-          <Route element={<Admin />} path='/admin/' >
+          <Route element={
+            <PrivateRoute>
+            <Admin />
+            </PrivateRoute>
+          } path='/admin/' >
             <Route element={<Dashboard />} path='' />
             <Route element={<h1>Welcome </h1>} path='hospital' />
             <Route element={<EmpForm />} path='empform' />
