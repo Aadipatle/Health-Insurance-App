@@ -1,45 +1,131 @@
-
-.hospitalnav{
+.dashboard {
+    padding: 20px;
+    font-family: "Lato", sans-serif;
+  }
+  
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 80px;
-    box-shadow: 0 2px 10px gray;
-    background-color: white;
+    padding: 10px;
+    background-color: #f2f2f2;
+    font-family: "Lato", sans-serif;
+  }
+  .ticket{
+    display: flex;
+    gap: 12px;
+  }
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-}
-
-.hnav{
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+  }
+  
+  .modal-actions {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    /* height: 80px; */
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .modal textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
-    padding: 5px;
-}
-
-nav li{
-    list-style: none    ;
-}
-.hpage{
-    height: 100vh;
-    background-color: rgba(212, 212, 255, 0.661);
-}
-.headingwrapper{
-display: flex;
-height: 300px;
-align-items: center;
-padding:10px;
-justify-content: space-evenly;
-}
-.health{
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 21px;
-}
-.banner{
-    height: 50px;
-    border: 2px solid blue;
-}
-.health h1 span{
-    color: rgb(34, 34, 253);
-}
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group.full-width {
+    grid-column: span 2;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  textarea {
+    height: 80px;
+  }
+  
+  .submit-btn {
+    grid-column: span 2;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 120px;
+  }
+  
+  .submit-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .data-table th, .data-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .data-table th {
+    background-color: #f2f2f2;
+  }
+  
+  @media (max-width: 768px) {
+    .form-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .form-group.full-width {
+      grid-column: span 1;
+    }
+  }
+  

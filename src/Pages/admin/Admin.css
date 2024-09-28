@@ -9,9 +9,12 @@
   width: 180px;
 }
 a {
-  font-size: 16px;
+  font-size: 17px;
   font-family: "Lato", sans-serif;
   font-weight: 500;
+  margin: 5px;
+  display: flex;
+  gap: 12px;
 }
 .sidebar {
   height: 100vh;
@@ -67,12 +70,28 @@ section {
   flex-direction: column;
   gap: 5px;
 }
-.hospital,
-.health,
+.hospital h5{
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+
+}
+.i{
+   color: #0561d2;
+}
+.health h5{
+ font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  /* color: rgb(19, 19, 187); */
+
+}
 .admin-customers h5 {
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 19px;
+  /* color: rgb(19, 19, 187); */
+
 }
 .hidden {
   position: absolute;

@@ -112,7 +112,7 @@ function Home() {
                         <h5>Cashless Hospitalization</h5>
                         <p>We Provide Cashless  hospitalisation service , which allows the policy holder to avail of  hospital facilities without having to worry about paying hospital bills.</p>
                     </div>
-                </div>
+                </div> 
                 <div className="service s1" data-aos='fade-right' data-aos-duration='1100'>
                     <div className="service-content">
                         <h5>Cashless Hospitalization</h5>
@@ -181,13 +181,12 @@ function Home() {
                         slideShadows: true,
                     }}
                     autoplay={{
-                        delay: 2000,
+                        delay: 5000,
                         disableOnInteraction: false,
                     }}
 
-                    modules={[EffectCoverflow,]}
-                    className='swip_wrap'
-                >
+                    modules={[EffectCoverflow,Autoplay]}
+                    className='swip_wrap'>
                     <div className="w">
                         <SwiperSlide className='swiper-feedback'>
                             <div className="cc">
@@ -196,7 +195,7 @@ function Home() {
                                         <img src={customer} alt="" />
                                     </div>
                                     <div className="customer-info">
-                                        <h6>Christopher Campbell</h6>
+                                        <h6>Christopher</h6>
                                         <p>“I was able to get an appointment quickly, which was great for my urgent issue.”</p>
                                     </div>
                                 </div>
@@ -209,8 +208,8 @@ function Home() {
                                         <img src={customer} alt="" />
                                     </div>
                                     <div className="customer-info">
-                                        <h6>Christopher Campbell</h6>
-                                        <p>“I was able to get an appointment quickly, which was great for my urgent issue.”</p>
+                                        <h6>Aditya</h6>
+                                        <p>Provide Best Service And Quick Response </p>
                                     </div>
                                 </div>
                             </div>
@@ -222,13 +221,12 @@ function Home() {
                                         <img src={customer} alt="" />
                                     </div>
                                     <div className="customer-info">
-                                        <h6>Christopher Campbell</h6>
+                                        <h6>Abhisekh</h6>
                                         <p>“I was able to get an appointment quickly, which was great for my urgent issue.”</p>
                                     </div>
                                 </div>
                             </div>
                         </SwiperSlide>
-
                     </div>
                 </Swiper>
             </div>

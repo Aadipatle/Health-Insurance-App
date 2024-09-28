@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './Admin.css'
 import logo from '../../Assets/jivit-logo.svg'
 import { Link, Outlet } from 'react-router-dom'
-import { FaHeart, FaHospital, FaUser,FaBars,FaCut } from 'react-icons/fa'
+import { FaHeart, FaHospital, FaUser,FaBars,FaCut, FaPlus, FaList, FaPaypal, FaSquare, FaUsers } from 'react-icons/fa'
 
 
 function Admin() {
@@ -31,22 +31,22 @@ function Admin() {
                         <hr />
                         <div className="hospital">
                             <h5><FaHospital /> Hospital</h5>
-                            <Link to='hospitalform' >Add Hospital</Link>
-                            <Link to='hospital'>Hospital List</Link>
-                            <Link to='hospital'>Hospital Claim</Link>
-                            <Link to='hospitalpay'>Hospital Payments</Link>
+                            <Link to='hospitalform'><FaPlus className='i'/>Add Hospital</Link>
+                            <Link to='hospital'><FaList className='i'/> Hospital List</Link>
+                            <Link to='hospital'><FaSquare className='i'/> Hospital Claim</Link>
+                            <Link to='hospitalpay'><FaPaypal className='i'/> Hospital Payments</Link>
                         </div>
                         <hr />
                         <div className="health">
                             <h5><FaHeart /> Health Checkup</h5>
-                            <Link to='hospital'>Health List</Link>
+                            <Link to='hospital'><FaList className='i'/> Health List</Link>
                         </div>
                         <hr />
                         <div className="admin-customers">
-                            <h5><FaUser /> Customers</h5>
-                            <Link to='empform'>Add Benificiary</Link>
-                            <Link to='familyform'>Add Family Members</Link>
-                            <Link to='emplist'>Customers List</Link>
+                            <h5><FaUsers/> Customers</h5>
+                            <Link to='empform'> <FaPlus className='i'/> Add Benificiary</Link>
+                            <Link to='familyform'><FaUser className='i'/>  Add Family Members</Link>
+                            <Link to='emplist'><FaList className='i'/>  Customers List</Link>
                         </div>
                     </div>
                 </div>
